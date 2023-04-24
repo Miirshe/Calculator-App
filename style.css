@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 400px;
+    background-color: #585f6e;
+    border: 12px;
+    padding: 20px;
+    box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.cal-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    padding: 12px;
+    background-color: #585f6e;
+    color: #54b662;
+    text-align: right;
+}
+
+#ope-input {
+    font-size: 20px;
+    color: #fff;
+}
+
+.calc-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.equal {
+    grid-column: span 2;
+    border-radius: 50px;
+}
+
+button {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 45%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ccddce;
+}
+
+.operation {
+    background-color: #54b662;
+    color: #fff;
+}
+
+.operation:hover {
+    background-color: #7bc286;
+}
+
+.history-page {
+    width: 360px;
+    height: 400px;
+    position: absolute;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    overflow-y: auto;
+    background-color: #4daf56;
+    color: #fff;
+    display: none;
+}
+.history-page.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.history-icon {
+    color: #fff;
+    position: relative;
+    left: 2%;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.history-head{
+    display: flex;
+    justify-content: space-between;
+}
